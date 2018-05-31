@@ -6,8 +6,8 @@ pipeline {
         choice(choices: 'US-EAST-1\nUS-WEST-2', description: 'What AWS region?', name: 'region')
     }
     tools {
-        maven 'maven-repo'
-        jdk 'Your JDK Name'
+        maven 'maven'
+        jdk 'JAVA1.8'
     }
     stages {
         stage ('Checkout'){
